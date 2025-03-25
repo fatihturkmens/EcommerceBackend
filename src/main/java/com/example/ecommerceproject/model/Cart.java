@@ -14,7 +14,7 @@ import java.util.List;
 public class Cart extends BaseEntity {
 
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "customer_id",referencedColumnName = "id")
     private Customer customer;
 
